@@ -47,5 +47,10 @@ int findYearWithMaxAlive(unsigned int n, Person *listOfPersons)
         else if (peopleAliveInYear[key] == maxAliveInYear && maxAliveInYear != 0)
             yearsWithSameAliveNo++;            
     }
+
+    if (maxAliveInYear == 1)        // No common year between alive people 
+    {
+        yearWithMaxPeopleAlive = 0;
+    }
     return yearWithMaxPeopleAlive;
 }
