@@ -4,7 +4,7 @@ Code        : Solve using a language of your choice and dataset of your own crea
 Submission  : Please upload your code, dataset, and example of the program’s output to Bit Bucket or Github. Please include any graphs or charts created by your program.
 
 Language -> C++,  IDE -> Microsoft Visual Studio Community 2015 RC vs 14.0.22823.1
-Inputs -> Read from file input.txt. The first line in the input file is the number of persons in the list. The next values are the birth year and the death years of different persons.
+Inputs -> Read from file "input.txt" via command prompt. The first line in the input file is the number of persons in the list. The next values are the birth year and the death years of different persons.
 This means the file follows the sequence "Number of Persons" "Birth Year" "Death Year" "Birth Year" "Death Year" .... so on
 */
 
