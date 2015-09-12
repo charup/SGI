@@ -1,1 +1,1 @@
-Year With Maximum number of alive people = 1986
+No common year with alive people
