@@ -34,7 +34,7 @@ int _tmain(int argc, _TCHAR* argv[])
     }
     else
     {
-        cout << "No common year with alive people"<< "\n";
+        cout << "No common year between alive people"<< "\n";
     }
 
     delete[] p;
