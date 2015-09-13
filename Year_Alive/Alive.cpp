@@ -4,15 +4,15 @@
 
 using namespace std;
 
-// Global variable declaration
-int min_birth_year = 1900;                      // Given
-int max_death_year = 2000;                      // Given
+// Global constants
+const int min_birth_year = 1900;                      // Given
+const int max_death_year = 2000;                      // Given
 
 int findYearWithMaxAlive(unsigned int n, Person *listOfPersons)
 {
     unsigned int size_list = n;
 
-    static unordered_map<int, unsigned int> peopleAliveInYear;
+    unordered_map<int, unsigned int> peopleAliveInYear;
     
     //initialize the unordered map
     for (int i = min_birth_year; i <= max_death_year; i++)
@@ -34,7 +34,7 @@ int findYearWithMaxAlive(unsigned int n, Person *listOfPersons)
     //find the year with max people alive
     int yearWithMaxPeopleAlive = 0;
     unsigned int maxAliveInYear = 0;
-    int yearsWithSameAliveNo = 0;
+//    int yearsWithSameAliveNo = 0;
     
     for (key = min_birth_year; key <= max_death_year; key++)
     {
@@ -42,10 +42,10 @@ int findYearWithMaxAlive(unsigned int n, Person *listOfPersons)
         {
             maxAliveInYear = peopleAliveInYear[key];
             yearWithMaxPeopleAlive = key;
-            yearsWithSameAliveNo = 1;
+//            yearsWithSameAliveNo = 1;
         }
-        else if (peopleAliveInYear[key] == maxAliveInYear && maxAliveInYear != 0)
-            yearsWithSameAliveNo++;            
+/*        else if (peopleAliveInYear[key] == maxAliveInYear && maxAliveInYear != 0)
+            yearsWithSameAliveNo++;    */        
     }
 
     if (maxAliveInYear == 1)        // No common year between alive people 
