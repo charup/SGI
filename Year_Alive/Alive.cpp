@@ -34,7 +34,6 @@ int findYearWithMaxAlive(unsigned int n, Person *listOfPersons)
     //find the year with max people alive
     int yearWithMaxPeopleAlive = 0;
     unsigned int maxAliveInYear = 0;
-//    int yearsWithSameAliveNo = 0;
     
     for (key = min_birth_year; key <= max_death_year; key++)
     {
@@ -42,10 +41,7 @@ int findYearWithMaxAlive(unsigned int n, Person *listOfPersons)
         {
             maxAliveInYear = peopleAliveInYear[key];
             yearWithMaxPeopleAlive = key;
-//            yearsWithSameAliveNo = 1;
-        }
-/*        else if (peopleAliveInYear[key] == maxAliveInYear && maxAliveInYear != 0)
-            yearsWithSameAliveNo++;    */        
+        }        
     }
 
     if (maxAliveInYear == 1)        // No common year between alive people 
